@@ -1,0 +1,32 @@
+Input Description:
+A single line contains a string.
+
+Output Description:
+Print the characters in a string separated by line.
+
+Sample Input :
+python
+Sample Output :
+p
+y
+t
+h
+o
+n
+
+program
+-------------
+b=input("Enter any string")
+for sec in b:
+    print(sec)
+
+output
+--------
+Enter any string
+python
+p
+y
+t
+h
+o
+n
