@@ -1,0 +1,43 @@
+Write a code to get an integer N and print the values from N to 1.
+
+Input Description:
+A single line contains an integer N.
+
+Output Description:
+Print the values from N to 1 in a separate line.
+
+Sample Input :
+10
+Sample Output :
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+program:
+---------
+a=int(input("enter the number"))
+b=a+1
+for i in range(1,b):
+  c=b-i
+  print(c)
+
+output:
+-------
+Enter the number:10
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
