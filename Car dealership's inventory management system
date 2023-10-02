@@ -1,0 +1,90 @@
+Car dealership's inventory management system
+
+Task-1. You are tasked with creating a Python program to represent vehicles using a class. Each car should have attributes for maximum speed and mileage.
+
+class vehicles:
+    def __init__(self,max_speed,mileage):
+        self.max_speed=max_speed
+        self.mileage=mileage
+
+Task-2. Update the class with the default color for all vehicles," white".
+
+class vehicles:
+    color="white"
+    
+    def __init__(self,max_speed,mileage):
+        self.max_speed=max_speed
+        self.mileage=mileage
+
+Task-3. Additionally, you need to create methods in the Vehicle class to assign seating capacity to a vehicle.
+
+class vehicles:
+    color="white"
+    
+    def __init__(self,max_speed,mileage):
+        self.max_speed=max_speed
+        self.mileage=mileage
+    def seating_capacity(self,capacity):
+        self.capacity=capacity
+
+
+Task-4. Create a method to display all the properties of an object of the class.
+
+class vehicles:
+    color="white"
+    
+    def __init__(self,max_speed,mileage):
+        self.max_speed=max_speed
+        self.mileage=mileage
+
+    def seating_capacity(self,capacity):
+        self.capacity=capacity
+
+    def display_all(self):
+        print("properties of the Vehicle:")
+        print("Color:",self.color)
+        print("Maximum Speed:", self.max_speed)
+        print("Mileage:", self.mileage)
+        print("Seating Capacity:", self.capacity)	
+    
+
+Task-5. Additionally, you need to create two objects of the Vehicle class object that should have a max speed of 200kph and mileage of 50000kmpl with five seating capacities, and another car object should have a max speed of 180kph and 75000kmpl with four seating capacities.
+
+class vehicles:
+    color="white"
+    
+    def __init__(self,max_speed,mileage):
+        self.max_speed=max_speed
+        self.mileage=mileage
+
+    def seating_capacity(self,capacity):
+        self.capacity=capacity
+
+     def display_all(self):
+        print("properties of the Vehicle:")
+        print("Color:",self.color)
+        print("Maximum Speed:", self.max_speed)
+        print("Mileage:", self.mileage)
+        print("Seating Capacity:", self.capacity)
+
+# Creating objects of the Vehicle class
+honda=vehicles(200,50000)
+honda.seating_capacity(5)
+honda.display_all()
+
+bmw=vehicles(180,75000)
+bmw.seating_capacity(4)
+bmw.display_all()
+
+
+output:
+properties of the Vehicle:
+Color: white
+Maximum Speed: 200
+Mileage: 50000
+Seating Capacity: 5
+properties of the Vehicle:
+Color: white
+Maximum Speed: 180
+Mileage: 75000
+Seating Capacity: 4
