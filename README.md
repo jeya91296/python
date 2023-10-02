@@ -29,4 +29,14 @@ It is possible to write Python in an Integrated Development Environment, such as
 Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
 Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
 
+COMMENTS
+---------------------------------------------------------------------------
+-explain Python code.
+-code more readable.
+-prevent execution when testing code.
+eg: #this is comment
+  """this is multi line comment
+      like paragraph
+      fghsdfh"""
+
 
