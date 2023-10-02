@@ -1,0 +1,106 @@
+-Variables are containers for storing data values.
+-Variables do not need to be declared with any particular type, and can even change type after they have been set.
+-String variables can be declared either by using single or double quotes
+
+ Rules for Python variables:
+--------------------------------------------
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (a and A are different variables)
+A variable name cannot be any of the Python keywords.
+
+#Legal variable names:
+-----------------------------------
+mybag = "John"
+my_bag = "John"
+_my_bag = "John"
+myBag = "John"
+MYBAG = "John"
+mybag2 = "John"
+
+#Illegal variable names:
+-----------------------------------
+2mybag = "John"
+my-bag = "John"
+my bag = "John"
+Above 3 syntax error will occur bcz it is illegal variable names
+
+#Multi Words Variable Names
+------------------------------------------
+Variable names with more than one word can be difficult to read.
+Some techniques are 
+
+1.Camel Case
+--------------------
+Each word, except the first, starts with a capital letter:
+Eg:myVariableName = "John"
+2.Pascal Case
+---------------------
+Each word starts with a capital letter:
+Eg:MyVariableName = "John"
+3.Snake Case
+----------------------
+Each word is separated by an underscore character:
+Eg:my_variable_name = "John"
+
+Many Values to Multiple Variables
+-------------------------------------------------
+assign values to multiple variables in one line:
+Eg:x, y, z = "cat", "Mouse", "dog"
+print(x)
+print(y)
+print(z)
+Note:the number of variables matches the number of values, or else you will get an error.
+
+
+One Value to Multiple Variables
+--------------------------------------------------
+assign the same value to multiple variables in one line:
+Eg:
+x = y = z = "goat"
+print(x)
+print(y)
+print(z)
+
+Get the Type
+----------------------
+You can get the data type of a variable with the type() function.
+Eg:
+x = 5
+print(type(x))
+
+Casting
+------------
+If you want to specify the data type of a variable, this can be done with casting.
+Eg:x = str(3)    # x will be '3'
+
+
+#Program
+--------------------
+#variables
+---------
+x=5
+X=90 #Variable names are case-sensitive.
+a=1.6
+b="john"
+c='kite' #String variables can be declared either by using single or double quotes
+d=True
+print(x,X,a,b,c,d)
+z = float(3)  #z will be 3.0 (casting)
+print(type(z)) #get the type
+n=m=1 #one value to multiple variable
+print(m)
+print(n)
+f,i= "rose" ,"green" #many values to multiple variables
+print(f)
+print(i)
+
+Output:
+----------
+5 90 1.6 john kite True
+<class 'float'>
+ 1
+ 1 
+rose 
+green
