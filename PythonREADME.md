@@ -39,4 +39,20 @@ eg: #this is comment
       like paragraph
       fghsdfh"""
 
+class and object how works
+--------------------------
+def f(value, values):
+  v=2
+  values[0]=44
+t=3
+v=[1,2,3]
+f(t,v)
+print(t, v[0])
+
+output:
+3 44
+
+![image](https://github.com/jeya91296/python/assets/110182064/07caa135-c1a0-4b36-9c47-d0eba7fc56b0)
+
+
 
