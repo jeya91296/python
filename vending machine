@@ -1,0 +1,47 @@
+class VendingMachine():
+    # Implement the VendingMachine here
+    
+    def __init__(self,num_items,item_price):
+        self.num_items=num_items
+        self.item_price=item_price
+     
+    def buy(self,req_items,money):
+        r=self.item_price*req_items
+        if self.num_items>=req_items:
+            if r<=money :
+                self.num_items=self.num_items-req_items
+                if r<money:
+                    m=money-r
+                else:
+                    m=0                   
+                print("Balance Amount:", m)
+            else:
+                print("Not enough coins")
+        
+        elif self.num_items < req_items:
+            print("Not enough items in the machine")
+        
+if __name__ == '__main__':
+    num_items, item_coins = map(int, input("Enter the Number of items and the amount for the product in the VendingMachine:").split())
+    machine = VendingMachine(num_items, item_coins)
+    n = int(input("how many times you want to buy the items"))
+    for _ in range(n):
+        num_items, num_coins = map(int, input("Enter the number of items and cash to buy").split())
+        change = machine.buy(num_items, num_coins)
+
+
+Output:
+---------
+Enter the Number of items and the amount for the product in the VendingMachine:10 3
+
+how many times you want to buy the items3
+
+Enter the number of items and cash to buy1 5
+Balance Amount: 2
+
+Enter the number of items and cash to buy10 20
+Not enough items in the machine
+
+Enter the number of items and cash to buy1 2
+Not enough coins
+    
