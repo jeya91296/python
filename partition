@@ -1,0 +1,6 @@
+#partition function
+print("cd".partition("cd"))
+
+Output:
+--------
+('', 'cd', '')
