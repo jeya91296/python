@@ -1,0 +1,5 @@
+z=set('abc$de')
+'a' in z
+
+output:
+true
