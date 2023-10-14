@@ -3,3 +3,12 @@ z=set('abc$de')
 
 output:
 true
+
+py=2+3
+print('py')
+print(py)
+
+Output:
+------
+py
+5
